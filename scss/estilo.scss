@@ -1,0 +1,55 @@
+//
+//_____IMPORTACIÓN DE FUENTES
+//
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+//
+//_____PALETA DE COLORES
+//
+@import 'colores.scss';
+//
+//_____ESTILOS GENERALES
+//
+@import 'general.scss';
+//
+//_____ESTILO DE BOTONES
+//
+@import 'botones.scss';
+//
+//_____ESTILO DEL HEADER
+//
+@import 'header.scss';
+//
+//_____ESTILO DEL MENÚ MIGAJAS DE PAN
+//
+@import 'bread.scss';
+
+
+/* IMPORTACIÓN ESTILO DE PÁGINAS */
+
+//
+//_____PÁGINA DE INDEX
+//
+@import 'index.scss';
+//
+//_____PÁGINA DE SERVICIOS
+//
+@import 'servicios.scss';
+//
+//_____PÁGINA DE PORRTAFOLIO
+//
+@import 'portafolio.scss';
+//
+//_____PÁGINA DE SOBRE MI
+//
+@import 'sobremi.scss';
+//
+//_____PÁGINA DE CONTACTO
+//
+@import 'contacto.scss';
+
+
+//
+//_____FOOTER
+//
+@import 'footer.scss';

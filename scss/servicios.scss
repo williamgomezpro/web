@@ -1,0 +1,66 @@
+.bannerServicios{
+    background-image: url('../img/business-5475663_1280.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(55vh - 60px);
+}
+
+.bannerServiciosContenido{
+    background-color: rgba(2, 31, 54, 0.6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerServiciosContenido h1{
+    color: $colorCuatro;
+    font-size: 24px;
+}
+
+/* ________BOX_______ */
+
+#boxServicios {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+    background-color: $colorCuatro;
+}
+
+#boxServicios .cardServicio {
+    border: 1px solid #cecccc;   
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff
+}
+
+#boxServicios .cardServicio .contenidoCardServicio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#boxServicios .cardServicio .contenidoCardServicio h2{
+    padding: 25px 10px;
+    font-size: 16px;
+}
+
+#boxServicios .cardServicio .contenidoCardServicio p{
+    margin: 0 10px;
+}
+
+#boxServicios .cardServicio .botonCardServicio {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

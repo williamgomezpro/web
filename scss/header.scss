@@ -1,0 +1,53 @@
+header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    height: 60px;
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+
+    .header__logo{
+        grid-column: 1 / 4;
+
+        .header__logo--a{
+            text-decoration: none;
+            font-family: 'Cinzel Decorative', cursive;
+            font-size: 16px;
+            color: $colorCuatro;
+            font-weight: bold;
+        }
+    }
+    .header__menu{
+        grid-column: 4 / 8;
+
+        .header__menu--ul{
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content:flex-end;
+            column-gap: 20px;
+            list-style: none; 
+            
+            li{
+                a{
+                    text-decoration: none;
+                    color: $colorCuatro;
+                    transition: .2s ease-in-out;
+                }
+                a:hover{
+                    color: $colorTres;
+                }
+            }
+        }
+    }
+
+    .menuBar{
+        display: none;
+        font-size: 2em;
+        color: $colorCuatro;
+        cursor: pointer;
+    }
+}

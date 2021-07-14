@@ -1,0 +1,347 @@
+@media only screen and (max-width: 600px){
+    
+    /* __________HEADER > LOGO > MENÚ__________ */
+
+    header{
+        padding: 0 30px;
+    }
+    header .header__logo{
+        grid-column: 1 / 6;
+    }
+    header .menuBar{
+        display: block;
+        grid-column: 7 / 8;
+        justify-self: end;
+    }
+    header .menuBar:hover{
+        color: #FFC107;
+    }
+    header .header__menu{
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        background-color: #000;
+        opacity: 0.8;
+        border-radius: 0 0 0 30px;
+        margin-top: 26em;
+        padding: 30px 30px;
+        transform:translateX(170%);
+        transition: all 1s;
+    }
+    header .header__menu--ul{
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        row-gap: 40px;
+    }
+    header .menuToogle{
+        transform:translateX(20%);
+    }
+
+    .boton{
+        width: 110px;
+        font-size: 12px;
+    }
+    .reset{
+        width: 100%;
+        font-size: 12px;
+    }
+    .submit{
+        width: 100%;
+        font-size: 12px;
+    }
+    .botonera{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+    }
+
+    .bread{
+        padding: 20px 30px;
+    }
+    .breadDark{
+        padding: 20px 30px;
+    }
+    /* ____________________________INDEX______________________*/
+
+    .banner{
+        height: calc(75vh - 60px);
+    }
+    .bannerContenido h1{
+        font-size: 24px;
+    }
+    .bannerContenido h2{
+        font-size: 20px;
+    }
+
+    .titleServicios h1{
+        padding: 5px 30px;
+        font-weight: bold;
+    }
+    #servicios{
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 20px 30px 60px 30px;
+    }
+
+    /* _______FOOTER_______ */
+
+    footer{
+        padding: 30px;
+    } 
+    footer .footerContenedor{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .copy{
+        padding: 8px 30px;
+        font-size: 12px;
+    }
+} 
+
+
+@media only screen and (min-width: 600px){
+    
+    /* _________HEADER > LOGO > MENÚ_________ */
+
+    header{
+        padding: 0 30px;
+    }
+    header .header__logo{
+        grid-column: 1 / 3;
+        font-size: 14px;
+    }
+    header .header__menu{
+        grid-column: 3 /8;
+        font-size: 13px;
+    }
+    .bread{
+        padding: 20px 30px;
+    }
+    .breadDark{
+        padding: 20px 30px;
+    }
+
+    /* _______________________INDEX_____________________ */
+
+    .titleServicios h1{
+        padding: 5px 30px;
+        font-weight: bold;
+    }
+    #servicios{
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 30px 30px 60px 30px;
+    }
+
+    #tecnologia {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+        background-color: #343A40;
+    }
+    /* _________________________SERVICIOS_____________________ */
+
+    #boxServicios .cardServicio .contenidoCardServicio h2{
+        font-size: 18px;
+    }
+
+    /* _________________________SOBRE MI______________________ */
+    
+    .boxContenidoSobreMi .contenidoSobreMi{
+        grid-template-rows: 220px 1fr;
+    }
+    .boxContenidoSobreMi .contenidoSobreMi p{
+        text-align: justify;
+    }
+    .boxContenidoSobreMi .contenidoSobreMi ul{
+        margin: 0;
+        padding: 0 30px;
+    }
+
+    /* ______FOOTER_______ */
+
+    footer{
+        padding: 40px;
+    } 
+    footer .footerContenedor{
+        grid-template-columns: 2fr 1fr;
+        column-gap: 100px;
+    }
+    footer .footerContenedor .contacto{
+        display: none;
+    }
+    .copy{
+        padding: 8px 40px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .bread{
+        padding: 20px 100px;
+    }
+    .breadDark{
+        padding: 20px 100px;
+    }
+    
+     /* _________HEADER > LOGO > MENÚ_________ */
+
+    header{
+        padding: 0 100px;
+    }
+    header .header__logo{
+        grid-column: 1 / 4;
+        font-size: 16px;
+    }
+    header .header__menu{
+        grid-column: 4 /8;
+        font-size: 14px;
+    }
+
+    /* _________________________INDEX______________________ */
+
+    .titleServicios h1{
+        padding: 5px 30px;
+        font-weight: bold;
+    }
+    #servicios{
+        flex-direction: row;
+        height: 350px;
+        padding: 20px 100px 80px 100px;
+    }
+    
+    #tecnologia {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+        padding: 30px 100px 80px 100px;
+        background-color: #343A40;
+    } 
+
+    /* ________________SERVICIOS______________________ */
+
+    #boxServicios .cardServicio .contenidoCardServicio h2{
+        font-size: 18px;
+    }
+    .bannerServiciosContenido h1{
+        font-size: 32px;
+    }
+    #boxServicios{
+        padding: 70px 100px 70px 100px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 20px;
+        align-items: flex-start;
+    }
+    #boxServicios .boxServicioUno{
+        grid-column: 1/5;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    }
+    #boxServicios .boxServicioDos{
+        grid-column: 5/9;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+    #boxServicios .boxServicioTres{
+        grid-column: 9/13;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    }
+    #boxServicios .cardServicio .contenidoCardServicio{
+        height: 450px;
+    }
+
+    /* ________________SOBRE MI______________________ */
+    
+    .bannerSobreMiContenido h1{
+        font-size: 32px;
+    }
+    .boxContenidoSobreMi{
+       
+        padding: 60px 100px;
+    }
+    .boxContenidoSobreMi .contenidoSobreMi{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+        grid-template-rows:none;
+        row-gap: 0;
+        justify-content:flex-start;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .boxContenidoSobreMi .contenidoSobreMi .imgSobreMi{
+        grid-column: 1/2;
+        grid-row: 1/4;
+        padding: 30px 0;
+        display: block;
+        
+      }
+      .boxContenidoSobreMi .contenidoSobreMi .imgSobreMi .circular{
+        width: 421px;
+        height: 550px;
+        border-radius: 0%;
+        border:10px solid #E1E8EB;
+     
+      }
+    .boxContenidoSobreMi .contenidoSobreMi .imgSobreMi .circular img {
+        width: 100%;
+        height: auto;
+      }
+      .boxContenidoSobreMi .contenidoSobreMi p{
+        grid-column: 2/5;
+        grid-row: 1/1;
+        text-align: justify;
+        padding: 30px 0;
+      }
+      .boxContenidoSobreMi .contenidoSobreMi ul{
+        grid-column: 2/5;
+        grid-row:auto;
+        margin: 0;
+        padding: 0 30px;
+      }
+
+    /* ________________PORTAFOLIO______________________ */
+    
+    .bannerPortafolioContenido h1{
+        font-size: 32px;
+    }
+    .boxPortafolio{
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: 20px;
+        padding: 80px 100px;
+    }
+
+    /* ________________CONTACTO______________________ */
+    
+    .bannerContacto__contenido--h1{
+        font-size: 32px;
+    }
+    .bannerContacto__contenido h2{
+        margin: 20px;
+        font-size: 14px;
+    }
+    
+    .bannerPortafolioContenido h1{
+        font-size: 32px;
+    }
+  
+    /* _______FOOTER_____ */
+
+    footer {
+        padding: 50px 100px;
+    }
+    footer .footerContenedor{
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    footer .footerContenedor .contacto{
+        display: block;
+    }
+    .copy{
+        padding: 8px 100px;
+    }
+} 

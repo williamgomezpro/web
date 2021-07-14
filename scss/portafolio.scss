@@ -1,0 +1,106 @@
+// BANNER
+
+.bannerPortafolio{
+    background-image: url('../img/cyber-3400789_1280.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(55vh - 60px);
+}
+
+.bannerPortafolioContenido{
+    background-color: rgba(2, 31, 54, 0.6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h1{
+        color: $colorCuatro;
+        font-size: 24px;
+    }
+}
+
+// B0X DE CONTENIDO
+
+.boxPortafolio{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: $colorUno;
+    padding: 25px 30px;
+    
+    .cardPortafolioUno{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 30px 30px;
+        background-color: $colorCuatro;
+        border-radius: 10px;
+        padding: 5px 5px 10px 5px;
+        box-shadow: rgba(243, 243, 245, 0.3) 0px 7px 29px 0px;
+        
+        img{
+            width: 100%;
+            height: auto;
+            grid-column: 1/4;
+            grid-row: 1/3;
+            border-radius: 10px 10px 0 0;
+        
+        }
+    }
+    
+    .cardPortafolioDos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 30px 30px;
+        background-color: $colorCuatro;
+        border-radius: 10px;
+        padding: 5px 5px 10px 5px;
+        box-shadow: rgba(243, 243, 245, 0.3) 0px 7px 29px 0px;
+        
+        img{
+            width: 100%;
+            height: auto;
+            grid-column: 1/4;
+            grid-row: 1/3;
+            border-radius: 10px 10px 0 0;
+        
+        }
+    }
+    
+    .cardPortafolioTres{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 30px 30px;
+        background-color: $colorCuatro;
+        border-radius: 10px;
+        padding: 5px 5px 10px 5px;
+        box-shadow: rgba(243, 243, 245, 0.3) 0px 7px 29px 0px;
+        
+        img{
+            width: 100%;
+            height: auto;
+            grid-column: 1/4;
+            grid-row: 1/3;
+            border-radius: 10px 10px 0 0;
+        
+        }
+    }
+    
+    h3{
+        grid-column: 1/3;
+        grid-row: 3/3;
+        margin: 0;
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+    h5{
+        grid-column: 1/3;
+        grid-row: 4/5;
+        margin: 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
